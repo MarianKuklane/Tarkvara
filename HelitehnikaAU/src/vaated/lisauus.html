@@ -18,31 +18,32 @@
 				
 					<div class = "row">
 						<div class = "col-md-6">
+						<form id="advertform" submit.delegate="addAdvert()">
 							<ul class = "form-style">
 								<li><label><span class="heading">Lisa uus kuulutus</span></label></li>
 								<li><label>Kuulutuse pealkiri <span class="required">*</span></label></li>
-								<li><input type="text" id="title" name="title"></li>
+								<li><input type="text" id="title" name="title" value.bind="advertData.title"></li>
 								
 								<li><label>Kuulutuse sisu <span class="required">*</span></label></li>
-								<li><input type="text" id="content" name="content"></li>
+								<li><input type="text" id="description" name="description" value.bind="advertData.description"></li>
 							
 								<li><label>Hind <span class="required">*<span></label></li>
-								<li><input type="text" id="price" name="price"></li>
+								<li><input type="text" id="price" name="price" value.bind="advertData.price"></li>
 							
 								<li><label>E-mail <span class="required">*<span></label></li>
-								<li><input type="text" id="email" name="email"></li>
+								<li><input type="text" id="email" name="email" value.bind="advertData.email"></li>
 							
 								<li><label>Telefon</label></li>
-								<li><input type="text" id="phonenumber" name="phonenumber"></li>	
+								<li><input type="text" id="phone" name="phone" value.bind="advertData.phone"></li>	
 								
 								<li><label>Kategooria <span class="required">*</span></label></li>
-								<li><select id="category" name="category">
+								<li><select id="category" name="category" value.bind="advertData.category">
 									<option value="Sale">Müük</option>
 									<option value="Rent">Rent</option>  
 								</select></li>
 								
 								<li><label>Alamkategooria</label></li>
-								<li><select id="subcategory" name="subcategory">
+								<li><select id="subcategory" name="subcategory" value.bind="advertData.subcategory">
 									<option value="speakers">Kõlarid</option>
 									<option value="option2">option2</option>  
 									<option value="option3">option3</option>   
@@ -53,6 +54,7 @@
 								
 								<li><input type="button" id="save" name="save" value="Lisa kuulutus" onclick="window.location.href='index.html'"></li>
 							</ul>
+							</form>
 						</div>
 					</div>
 				</div>
