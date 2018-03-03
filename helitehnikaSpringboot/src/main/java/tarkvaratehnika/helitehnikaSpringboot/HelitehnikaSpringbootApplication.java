@@ -8,5 +8,5 @@ public class HelitehnikaSpringbootApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(HelitehnikaSpringbootApplication.class, args);
-	}
+	}  
 }
