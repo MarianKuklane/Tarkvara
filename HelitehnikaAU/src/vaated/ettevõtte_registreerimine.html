@@ -1,0 +1,54 @@
+<template>
+<require from="kujundus/kujundus.css"> </require>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<body class="body">
+	
+	
+		<require from="nav-bar.html"></require>
+		<nav-bar></nav-bar>
+	
+	
+		<div class="main-content">
+		
+			<div class="tabs-panel">
+				<a href="#/regakas">Eraisiku registeerimine</a>
+				<a href="#/regaette">Ettevõtte registeerimine</a>	
+			</div>
+			
+			
+			<fieldset class="ruly">
+				<legend>Personaalne ja ettevõtte info:</legend>
+				<div class="column">
+					<label for="title">EesNimi:</label>
+				    <textarea class="form-control" rows="1" id="name" name="name"></textarea>
+				    <label for="title">Perekonnanimi:</label>
+				    <textarea class="form-control" rows="1" id="email" name="email"></textarea>
+				     <label for="title">Ettevõtte nimi:</label>
+				    <textarea class="form-control" rows="1" id="telefon" name="telefon"></textarea>
+				</div>
+			</fieldset>
+			
+			<fieldset class="ruly">
+				<legend>Kasutajakonto info:</legend>
+				<div class="column2">
+					<label for="title">Sisesta kasutajanimi:</label>
+				    <textarea class="form-control" rows="1" id="name" name="name"></textarea>
+				    <label for="title">Meiliaadress:</label>
+				    <textarea class="form-control" rows="1" id="email" name="email"></textarea>
+				    <label for="title">Parool:</label>
+				    <textarea class="form-control" rows="1" id="password" name="password"></textarea>
+				</div>
+			</fieldset>
+			
+			<fieldset>
+				<div class="button-horizontal">
+			 		<button type="submit" class="btn btn-default" name="register" id="button-register">Registeeri</button>
+			 	</div>
+			</fieldset>
+		</div>
+	
+	</body>
+</template>

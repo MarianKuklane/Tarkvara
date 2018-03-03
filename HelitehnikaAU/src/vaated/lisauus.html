@@ -1,0 +1,63 @@
+<template>
+<require from="kujundus/kujundus.css"> </require>
+
+<head>
+	<meta charset="utf-8">
+	<title>Lisa uus kuulutus</title> 
+</head>
+
+
+<body class="body">
+
+	<require from="nav-bar.html"></require>
+	<nav-bar></nav-bar>
+
+		<div class="main-content">
+	
+			<div class="container">
+				
+					<div class = "row">
+						<div class = "col-md-6">
+							<ul class = "form-style">
+								<li><label><span class="heading">Lisa uus kuulutus</span></label></li>
+								<li><label>Kuulutuse pealkiri <span class="required">*</span></label></li>
+								<li><input type="text" id="title" name="title"></li>
+								
+								<li><label>Kuulutuse sisu <span class="required">*</span></label></li>
+								<li><input type="text" id="content" name="content"></li>
+							
+								<li><label>Hind <span class="required">*<span></label></li>
+								<li><input type="text" id="price" name="price"></li>
+							
+								<li><label>E-mail <span class="required">*<span></label></li>
+								<li><input type="text" id="email" name="email"></li>
+							
+								<li><label>Telefon</label></li>
+								<li><input type="text" id="phonenumber" name="phonenumber"></li>	
+								
+								<li><label>Kategooria <span class="required">*</span></label></li>
+								<li><select id="category" name="category">
+									<option value="Sale">Müük</option>
+									<option value="Rent">Rent</option>  
+								</select></li>
+								
+								<li><label>Alamkategooria</label></li>
+								<li><select id="subcategory" name="subcategory">
+									<option value="speakers">Kõlarid</option>
+									<option value="option2">option2</option>  
+									<option value="option3">option3</option>   
+								</select></li>
+							
+								<li><label>Lisainfo</label></li>
+								<li><textarea name="info" id="info" class="field-long field-textarea"></textarea></li>
+								
+								<li><input type="button" id="save" name="save" value="Lisa kuulutus" onclick="window.location.href='index.html'"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+		</div>
+</body>
+
+
+</template>
