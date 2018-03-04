@@ -1,4 +1,4 @@
-export class index
+export class ettevõtte_registreerimine
 {
 	constructor() 
 	{

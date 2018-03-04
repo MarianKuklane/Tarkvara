@@ -1,4 +1,5 @@
-export class index 
+export class kuulutuse_detailvaade
+
 {
   constructor()
   {

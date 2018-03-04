@@ -1,6 +1,6 @@
 import {HttpClient, json} from 'aurelia-fetch-client'
 
-export class index 
+export class lisauus 
 {
 	advertData={}
 	
@@ -10,11 +10,7 @@ export class index
   }
   
   addAdvert(){
-	  let client = new HttpClient();
-	  
-	  let advertData = {
-			  
-	  }
+	  let client = new HttpClient();	  
 	  
 	  client.fetch('http://localhost:9000/advert/add', {
 		  'method': "POST",
