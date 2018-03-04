@@ -16,7 +16,7 @@ public class Advert {
 	long id;
 	String title;
 	String description;
-	int price;
+	double price;
 	String email;
 	String phone;
 	String category;
