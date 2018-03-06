@@ -12,7 +12,7 @@ export class lisauus
   addAdvert(){
 	  let client = new HttpClient();		  
 	  	  
-	  client.fetch('http://localhost:9000/advert/add', {
+	  client.fetch('http://localhost:8080/advert/add', {
 		  'method': "POST",
 		  'body': json(this.advertData)
 	  })

@@ -19,35 +19,35 @@
 	</div>
 	
 	
-	<fieldset class="ruly">
+	<form class="ruly" role="form" id="userform" submit.delegate="addUser()" >
 		<legend>Isikuandmed:</legend>
 		<div class="column">
-			<label for="title">Eesnimi:</label>
-		    <textarea class="form-control" rows="1" id="name" name="name"></textarea>
-		    <label for="title">Perekonnanimi:</label>
-		    <textarea class="form-control" rows="1" id="email" name="email"></textarea>
-		     <label for="title">Telefon:</label>
-		    <textarea class="form-control" rows="1" id="telefon" name="telefon"></textarea>
+			<label for="fistName">Eesnimi:</label>
+		    <textarea class="form-control" rows="1" id="name" name="name" value.bind="userData.firstName"></textarea>
+		    <label for="lastName">Perekonnanimi:</label>
+		    <textarea class="form-control" rows="1" id="lastname" name="lastname" value.bind="userData.lastName"></textarea>
+		     <label for="phone">Telefon:</label>
+		    <textarea class="form-control" rows="1" id="phone" name="phone" value.bind="userData.phone"></textarea>
 		</div>
-	</fieldset>
 	
-	<fieldset class="ruly">
+	
+
 		<legend>Kasutajakonto info:</legend>
 		<div class="column2">
-			<label for="title">Sisesta kasutajanimi:</label>
-		    <textarea class="form-control" rows="1" id="name" name="name"></textarea>
-		    <label for="title">Meiliaadress:</label>
-		    <textarea class="form-control" rows="1" id="email" name="email"></textarea>
-		    <label for="title">Parool:</label>
-		    <textarea class="form-control" rows="1" id="password" name="password"></textarea>
+			<label for="userName">Sisesta kasutajanimi:</label>
+		    <textarea class="form-control" rows="1" id="username" name="username" value.bind="userData.userName"></textarea>
+		    <label for="email">Meiliaadress:</label>
+		    <textarea class="form-control" rows="1" id="email" name="email" value.bind="userData.email"></textarea>
+		    <label for="password">Parool:</label>
+		    <textarea class="form-control" rows="1" id="password" name="password" value.bind="userData.password"></textarea>
 		</div>
-	</fieldset>
-	
-	<fieldset>
+		<fieldset>
 		<div class="button-horizontal">
 	 		<button type="submit" class="btn btn-default" name="register" id="button-register">Registeeri</button>
 	 	</div>
 	</fieldset>
+	</form>
+
 	
 </div>
 </body>

@@ -7,8 +7,16 @@ import java.util.Collection;
 @Service
 public class AdvertService {
 
-    @Autowired
-    private AdvertRepository advertRepository;
+   private AdvertRepository advertRepository;
+   
+   public AdvertService(AdvertRepository advertrepository) {
+	   this.advertRepository = advertRepository;
+   }
+    
+    public Advert addAdvert(Advert advert) {
+    	return advertRepository.save(advert);
+    }
+      
 
     public Student getAdvertById(long id){
         return this.advertRepository.getAdvertById(id);

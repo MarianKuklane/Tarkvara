@@ -9,9 +9,9 @@ public class AdvertController {
 	@Autowired
 	private AdvertService advertService;
 	
-	@RequestMapping(value="advert/add", method=RequestMethod.POST)
-	public AdvertController(AdvertService advertService) {
-		this.advertService = advertService;
+	@RequestMapping(value="advert/add", method=RequestMethod.POST, consumes = "application/json")	
+	public Advert addAdvert(@RequestBody Advert advert) {
+		return advertService.addAdvert(advert);
 	}
 	
     @RequestMapping(value = "advert/{id}", method = RequestMethod.GET)

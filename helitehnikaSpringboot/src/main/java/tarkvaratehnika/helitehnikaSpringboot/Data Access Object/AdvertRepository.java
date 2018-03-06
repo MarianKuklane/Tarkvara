@@ -1,11 +1,7 @@
-public class AdvertRepository {
+import org.springframework.data.repository.CrudRepository;
+
+@Repository
+public interface AdvertRepository extends CrudRepository<Advert, Long>{
 	
-	 	Advert getAdvertById(long id);
-
-	    void removeAdvertById(long id);
-
-	    void updateAdvert(Advert advert);
-
-	    void insertAdvertToDb(Advert advert);
-	    
 }
+

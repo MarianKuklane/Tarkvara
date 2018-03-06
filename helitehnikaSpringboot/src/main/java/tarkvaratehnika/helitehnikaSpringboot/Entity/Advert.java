@@ -13,7 +13,7 @@ public class Advert {
 	@Id
 	@GeneratedValue
 
-	long id;
+	int id;
 	String title;
 	String description;
 	double price;
