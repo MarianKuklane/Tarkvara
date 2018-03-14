@@ -1,9 +1,12 @@
 <template>
 
-<meta charset="utf-8">
+
 <require from="kujundus/kujundus.css"> </require>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- Latest compiled and minified CSS -->
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 
 <body class="body">
 
@@ -11,20 +14,23 @@
 	<nav-bar></nav-bar>
 
 <div class="main-content">
+<div class="container-fluid">
 
 
+
+<!--  
 	<div class="tabs-panel">
 		<a  class="nav-link" href="#/regakas">Eraisiku registeerimine</a>
 		<a  class="nav-link" href="#/regaette">Ettevõtte registeerimine</a>	
 	</div>
-	
+-->
 	
 	<form class="ruly" role="form" id="userform" submit.delegate="addUser()" >
 		<legend>Isikuandmed:</legend>
 		<div class="column">
-			<label for="fistName">Eesnimi:</label>
+			<label for="fistName">*&nbsp;Eesnimi:</label>
 		    <textarea class="form-control" rows="1" id="name" name="name" value.bind="userData.firstName"></textarea>
-		    <label for="lastName">Perekonnanimi:</label>
+		    <label for="lastName">*&nbsp;Perekonnanimi:</label>
 		    <textarea class="form-control" rows="1" id="lastname" name="lastname" value.bind="userData.lastName"></textarea>
 		     <label for="phone">Telefon:</label>
 		    <textarea class="form-control" rows="1" id="phone" name="phone" value.bind="userData.phone"></textarea>
@@ -34,21 +40,21 @@
 
 		<legend>Kasutajakonto info:</legend>
 		<div class="column2">
-			<label for="userName">Sisesta kasutajanimi:</label>
+			<label for="userName">*&nbsp;Sisesta kasutajanimi:</label>
 		    <textarea class="form-control" rows="1" id="username" name="username" value.bind="userData.userName"></textarea>
-		    <label for="email">Meiliaadress:</label>
+		    <label for="email">*&nbsp;Meiliaadress:</label>
 		    <textarea class="form-control" rows="1" id="email" name="email" value.bind="userData.email"></textarea>
-		    <label for="password">Parool:</label>
+		     <label for="password">*&nbsp;Parool:</label>
 		    <textarea class="form-control" rows="1" id="password" name="password" value.bind="userData.password"></textarea>
 		</div>
 		<fieldset>
 		<div class="button-horizontal">
-	 		<button type="submit" class="btn btn-default" name="register" id="button-register">Registeeri</button>
+	 		<button type="button" class="btn btn-secondary btn-lg btn-block" id="button-register" name="register">Registeeri</button>
 	 	</div>
 	</fieldset>
 	</form>
 
-	
+</div>	
 </div>
 </body>
 

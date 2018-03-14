@@ -1,11 +1,9 @@
 <template>
 <require from="kujundus/kujundus.css"> </require>
 
-<head>
-	<meta charset="utf-8">
-	<title>Lisa uus kuulutus</title> 
-</head>
-
+<!-- Latest compiled and minified CSS -->
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <body class="body">
 
@@ -14,50 +12,63 @@
 
 		<div class="main-content">
 	
-			<div class="container">
-				
-					<div class = "row">
-						<div class = "col-md-6">
-						<form role = "form" id="advertform" submit.delegate="addAdvert()">
-							<ul class = "form-style">
-								<li><label><span class="heading">Lisa uus kuulutus</span></label></li>
-								<li><label for="title">Kuulutuse pealkiri <span class="required">*</span></label></li>
-								<li><input type="text" id="title" name="title" value.bind="advertData.title"></li>
-								
-								<li><label for="description">Kuulutuse sisu <span class="required">*</span></label></li>
-								<li><input type="text" id="description" name="description" value.bind="advertData.description"></li>
-							
-								<li><label for="price">Hind <span class="required">*<span></label></li>
-								<li><input type="text" id="price" name="price" value.bind="advertData.price"></li>
-							
-								<li><label for="email">E-mail <span class="required">*<span></label></li>
-								<li><input type="text" id="email" name="email" value.bind="advertData.email"></li>
-							
-								<li><label for="phone">Telefon</label></li>
-								<li><input type="text" id="phone" name="phone" value.bind="advertData.phone"></li>	
-								
-								<li><label for="category">Kategooria <span class="required">*</span></label></li>
-								<li><select id="category" name="category" value.bind="advertData.category">
-									<option value="Sale">Müük</option>
-									<option value="Rent">Rent</option>  
-								</select></li>
-								
-								<li><label for="subcategory">Alamkategooria</label></li>
-								<li><select id="subcategory" name="subcategory" value.bind="advertData.subcategory">
-									<option value="speakers">Kõlarid</option>
-									<option value="option2">option2</option>  
-									<option value="option3">option3</option>   
-								</select></li>
-							
-								<li><label for="additionalInfo">Lisainfo</label></li>
-								<li><textarea name="info" id="info" class="field-long field-textarea" value.bind="advertData.additionalInfo"></textarea></li>
-								
-								<li><button type="submit" id="save" name="save" class="btn btn-default" value="Lisa kuulutus">Lisa kuulutus</li>
-							</ul>
-							</form>
-						</div>
+	
+			<form>
+			
+			 <div class="form-group row">
+				    <label for="title" class="col-sm-2 col-form-label">Kuulutuse pealkiri:</label>
+				    <div class="col-sm-10">
+				      <input type="title" class="form-control" id="inputTitle">
+				    </div>
+				  </div>
+			
+			 <div class="form-group row">
+				    <label for="title" class="col-sm-2 col-form-label">Kuulutuse tekst:</label>
+				    <div class="col-sm-10">
+				      <input type="content" class="form-control" id="inputContent">
+				    </div>
+				  </div>
+				  
+			<div class="form-group row">
+				    <label for="title" class="col-sm-2 col-form-label">Hind:</label>
+				    <div class="col-sm-10">
+				      <input type="price" class="form-control" id="inputPrice">
+				    </div>
+				  </div>
+			
+			  <div class="form-group row">
+			    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+			    <div class="col-sm-10">
+			      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+			    </div>
+			  </div>
+			  
+		
+			  
+			  <fieldset class="form-group">
+			    <div class="row">
+			      <legend class="col-form-label col-sm-2 pt-0">Kategooria</legend>
+					<div class="form-check form-check-inline">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+					  <label class="form-check-label" for="inlineRadio1">Rent</label>
 					</div>
-				</div>
+					<div class="form-check form-check-inline">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+					  <label class="form-check-label" for="inlineRadio2">Müük</label>
+					</div>
+			    </div>
+			  </fieldset>
+			
+			  <div class="form-group row">
+			    <div class="col-sm-10">
+			      <button type="submit" class="btn btn-primary">Sign in</button>
+			    </div>
+			  </div>
+			</form>
+				
+				
+	
+					
 		</div>
 </body>
 
