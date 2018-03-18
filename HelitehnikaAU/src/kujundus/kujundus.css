@@ -112,6 +112,9 @@
 	background-color: #D5D6DA
 }
 
+.panel-footer{
+	text-align: center;
+}
 .form-style{
 	text-align: center;
 	margin:10px auto;
@@ -222,3 +225,19 @@ ul{
 .advert a:hover{
 	color: #FFBC67;
 }
+
+
+
+.card-img-top{
+	width: 400px;
+	height:400px;
+}
+
+.carousel-item{
+	width: 400px;
+	height:800px;
+}
+
+
+
+
