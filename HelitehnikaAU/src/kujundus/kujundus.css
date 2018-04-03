@@ -64,10 +64,14 @@
 	left: 20%
 }
 
-.bounds{
-	padding-left: 120px; 
-    padding-right: 100px; 
+.main-content2{
+    left:20%;
 }
+
+.bounds{
+	padding-left: 20%; 
+}
+
 
 .column{
 	padding-left: 10px; 
@@ -76,6 +80,11 @@
 .column2{
 	padding-left: 10px; 
     padding-right: 200px;
+}
+
+.button-horizontal2{
+	padding-left: 26%; 
+    padding-right: 29%;
 }
 
 .button-horizontal{
