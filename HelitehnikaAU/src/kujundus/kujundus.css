@@ -61,7 +61,7 @@
 	margin: 0 auto;
 	background-color:white;
 	position:absolute;
-	left: 10%
+	left: 20%
 }
 
 .bounds{
@@ -79,16 +79,12 @@
 }
 
 .button-horizontal{
-	padding-left: 12px; 
+	padding-left: 10px; 
+    padding-right: 200px;
 }
 
-
-
-
-/*  Registeeru  */
-
 .ruly{
-	padding-left: 5px; 
+	padding-left: 20px; 
 }
 
 .form-control{
@@ -100,7 +96,6 @@
     border-radius: 4px;
     box-sizing: border-box;
 }
-
 
 
 
