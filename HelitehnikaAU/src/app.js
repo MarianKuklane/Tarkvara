@@ -16,7 +16,7 @@ export class App
     	   { route: 'regakas', name: 'kasutajaks_registreerimine', moduleId: 'vaated/kasutajaks_registreerimine', nav: true},
            { route: 'lisa', name: 'lisauus', moduleId: 'vaated/lisauus', nav: true, title: 'Lisa'},
            { route: 'kuulutustelis', name: 'kuulutuste_lisamine', moduleId: 'vaated/kuulutuste_lisamine', title: 'Kuulutuse_lisamine', nav: true},
-           { route: 'logisisse', name: 'logi_sisse', moduleId: 'vaated/logisisse', title: 'Logisisse', nav: true},
+           { route: 'logisisse', name: 'logi_sisse', moduleId: 'vaated/logisisse', title: 'Logi_sisse', nav: true},
         ]);
   } 
   
