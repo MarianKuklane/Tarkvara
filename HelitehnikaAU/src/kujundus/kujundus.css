@@ -67,6 +67,13 @@
 .main-content2{
     left:20%;
 }
+.custom-file{
+	left:38%;	
+}
+
+.custom-file-label{
+	width:500px;
+}
 
 .bounds{
 	padding-left: 20%; 
