@@ -13,11 +13,13 @@
 
 .navbar a:hover {
     color: #FFBC67;
+    text-decoration: none;
 }
 
 .navbar a.active {
     background-color: #44484B;
     color: white;
+    text-decoration: none;
 }
 
 
@@ -127,11 +129,16 @@
 }
 
 
-.card-title{
+.card-title {
 	text-align:center;
+
 }
 
 
+.card-title a:hover{
+	text-decoration: none;
+	text-align:center;
+}
 
 
 
