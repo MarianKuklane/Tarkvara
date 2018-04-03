@@ -135,17 +135,16 @@
 
 
 
-/*  Teine osa  */
+/*  Picture and text */
 
-/* Container holding the image and the text */
 
 .image {
   opacity: 1;
   width: 100%;
-  height: auto;
+  height: 500px;
   transition: .5s ease;
   backface-visibility: hidden;
-  background-size: cover;
+
 }
 
 .middle {
@@ -160,15 +159,14 @@
 }
 
 .text {
-  
-  color: Black;
+  color: black;
   font-size: 50px;
-
 }
 
 .picture{
 	width:100%;
 	position: relative;
+
 }
 
 .picture:hover .middle{
@@ -179,3 +177,7 @@
 .picture:hover .image{
 	 opacity: 0.3;
 }
+
+
+
+
