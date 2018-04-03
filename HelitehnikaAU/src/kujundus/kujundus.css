@@ -186,5 +186,15 @@
 }
 
 
+/*  Category */
+
+.category{
+	text-align:center;
+	font-family: "Roboto", sans-serif;
+}
 
 
+.container-fluid {
+      padding: 60px 50px;
+  }
+ 
