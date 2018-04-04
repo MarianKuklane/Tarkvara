@@ -11,18 +11,20 @@
  
 </head>
 
-
-<div repeat.for="advert of advertList" class="col-lg-4 col-sm-6 portfolio-item">
+<br>
+<br>
+<div repeat.for="advert of advertList" class="kujundus">
           <div class="card h-100">
-            <a href="#/kuulutustelis"><img class="card-img-top" src="" alt=""></a>
+            <a href="#/detail"><img class="card-img-top" src="" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">${advert.title}</a>
+                <a href="#/detail">${advert.title}</a>
               </h4>
               <p class="card-text">${advert.description}</p>
             </div>
           </div>
         </div>
+
 
 
 </template>
