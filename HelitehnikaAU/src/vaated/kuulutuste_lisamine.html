@@ -17,18 +17,23 @@
 
 <div class="row mb-2">
         <div  repeat.for="advert of advertList" class="col-md-6">
+        <form role = "form" id="advertform" submit.delegate="getAdvertById()">        
           <div class="card flex-md-row mb-4 box-shadow h-md-250">
             <div class="card-body d-flex flex-column align-items-start">
               <strong class="d-inline-block mb-2 text-primary"></strong>
               <h3 class="mb-0">
                 <a class="text-dark" href="#">${advert.title}</a>
-              </h3>
+              </h3>             
+              <input type="text" style='display:none' name="id" id="id" value =${advert.id} value.bind="advertData.id">         
+
               <div class="mb-1 text-muted">Hind: ${advert.price}</div>
               <p class="card-text mb-auto">${advert.category}</p>
-              <a href="#/detail">Vaata</a>
+              <!--<a href="#/detail">Vaata</a>-->
+              <button type="submit" class="btn btn-success btn-lg float-right" id="btnShow">Vaata</button>
             </div>
             <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Card image cap">
           </div>
+          </form>
         </div>
     </div>
 
