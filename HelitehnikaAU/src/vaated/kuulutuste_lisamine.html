@@ -13,22 +13,7 @@
 
 <br>
 <br>
-<!--  
-	<div class="row">
-		<div repeat.for="advert of advertList" class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#/detail"><img class="card-img-top" src="" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#/detail">${advert.title}</a>
-              </h4>
-              <p class="card-text">Hind${advert.price}</p>
-              <p class="card-text">${advert.description}</p>
-            </div>
-          </div>
-        </div>
-	</div>
--->
+
 
 <div class="row mb-2">
         <div  repeat.for="advert of advertList" class="col-md-6">
@@ -38,9 +23,9 @@
               <h3 class="mb-0">
                 <a class="text-dark" href="#">${advert.title}</a>
               </h3>
-              <div class="mb-1 text-muted">Hind${advert.price}</div>
-              <p class="card-text mb-auto">${advert.description}</p>
-              <a href="#">Vaata</a>
+              <div class="mb-1 text-muted">Hind: ${advert.price}</div>
+              <p class="card-text mb-auto">${advert.category}</p>
+              <a href="#/detail">Vaata</a>
             </div>
             <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Card image cap">
           </div>
