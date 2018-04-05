@@ -91,14 +91,6 @@
 
 
 
-
-
-
-
-
-
-
-
 /*
  * Blog name and description
  */
@@ -252,4 +244,23 @@
  
  
  /* Kuulutuste lisamine   */
+
+.box-shadow { 
+	box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .06); 
+	}
+
+.card-img-top1 {
+	height:300px;
+	width:400px;
+}
+
+.mb-0{
+	text-align:center;
+}
+
+.mb-1{
+	font-size:17px;
+
+	text-align:center;
+}
 
