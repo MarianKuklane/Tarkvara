@@ -21,14 +21,14 @@
            <img class="card-img-top1" src="src/resources/H8.png" alt="Card image cap">
               <strong class="d-inline-block mb-2 text-primary"></strong>
               <h3 class="mb-0">
-                <a class="text-dark" href="#">${advert.title}</a>
-              </h3>             
+                <a class="text-dark">${advert.title}</a>
+              </h3>            
+              <br> 
               <input type="text" style='display:none' name="id" id="id" value =${advert.id} value.bind="advertData.id">         
               <div class="mb-1 text-muted">Hind: ${advert.price}</div>
               <p class="mb-1 text-muted">${advert.category}</p>
-              <button type="submit" class="btn btn-light" id="btnShow">Vaata</button>
+              <a href="#/detail" class="btn btn-light" id="btnShow">Vaata</a>
             </div>
-          
         </form>
       </div>
     </div>
