@@ -1,7 +1,7 @@
 /* NAVBAR  */
 
-.navbar a {
-    float: right;
+.site-header a  {
+  	float:right;
     display: block;
     color: #FFFFFF;
     text-align: center;
@@ -9,20 +9,28 @@
     font-family: "Roboto", sans-serif;
 	text-decoration: none;
     font-size: 17px;
+    
+     
 }
 
-.navbar a:hover {
+.site-header a:hover {
     color: #FFBC67;
     text-decoration: none;
 }
 
-.navbar a.active {
+.site-header a.active {
     background-color: #44484B;
     color: white;
     text-decoration: none;
 }
 
+.site-header{
+	background-color: #44484B;
+}
 
+
+  
+  
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 .row.content {
 	height: 450px
@@ -40,8 +48,8 @@
    /* On small screens, set height to 'auto' for sidenav and grid */
 @media screen and (max-width: 767px) {
 .sidenav {
-        height: auto;
-        padding: 15px;
+     height: auto;
+     padding: 15px;
 }
 .row.content {height:auto;} 
 }
@@ -145,8 +153,20 @@
 
 /*  Footer  */
 
-.panel-footer{
-	text-align: center;
+.footer{
+	height:70px;
+	background-color: #44484B;
+	color:white;
+	text-align:center;
+	width:100%;
+	bottom: 0;
+	padding-top: 21px;
+	font-family: "Roboto", sans-serif;
+}
+
+.footer :hover {
+    color: #FFBC67;
+    text-decoration: none;
 }
 
 
@@ -172,7 +192,6 @@
 	text-align:center;
 
 }
-
 
 .card-title a:hover{
 	text-decoration: none;

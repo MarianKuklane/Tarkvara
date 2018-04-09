@@ -1,26 +1,30 @@
 <template>
-
+<head>
 	<require from="kujundus/kujundus.css"> </require>
 	
-	<!-- Latest compiled and minified CSS -->
+	<require from="nav-bar.html"></require>
+	<nav-bar></nav-bar>
+	
+	
+	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+</head>		
+		
 	<body class="body">
 	
-		<require from="nav-bar.html"></require>
-		<nav-bar></nav-bar>
+		
 	
 		<div class="main-content">
 				<div class="container-fluid">
 		
-		     <!--  
-				<div class="tabs-panel">
-					<a  class="nav-link" href="#/regakas">Eraisiku registeerimine</a>
-					<a  class="nav-link" href="#/regaette">Ettevõtte registeerimine</a>	
-				</div>
-			 -->
 				
 				<form class="ruly" role="form" id="userform" submit.delegate="addUser()" >
 					<legend>Isikuandmed:</legend>

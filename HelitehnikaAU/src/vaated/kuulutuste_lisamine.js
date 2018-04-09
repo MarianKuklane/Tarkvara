@@ -4,7 +4,7 @@ export class kuulutuse_lisamine
 
 {
 	advertList = []
-	advertId = advertData.id;
+	advertId = {}
 
 	constructor() {
 		
@@ -22,9 +22,9 @@ export class kuulutuse_lisamine
 	getAdvertById(){
 		  let client = new HttpClient();		  
 		  	  
-		  client.fetch('http://localhost:8080/advert/$advertId', {
+		  client.fetch('http://localhost:8080/advert/', {
 			  'method': "GET",
-			  'body': json(this.advertData.id)
+			  'body': json(this.advertData)
 		  })
 		      .then(response => response.json())
 		      .then(data => {
