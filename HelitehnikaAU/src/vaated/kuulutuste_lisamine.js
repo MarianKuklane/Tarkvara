@@ -1,13 +1,19 @@
 import {HttpClient, json} from 'aurelia-fetch-client'
+import {inject} from aurelia 'aurelie-framework'
+import {router} from aurelia 'aurelie-router'
 
+//@inject(Router)
 export class kuulutuse_lisamine
 
 {
-	advertList = []
-	advertId = {}
+	static inject(){
+		return [router];
+	}
+	
+	advertList = []	
 
-	constructor() {
-		
+	constructor(router) {
+		this.router = router;
 	}
 
 	activate() {
@@ -19,12 +25,17 @@ export class kuulutuse_lisamine
 		console.log("ACTIVATE");
 	}
 	
+	detail(id){
+		this.router.navigate('detail' +'/'+ id);
+		console.log("Id kätte saadud");
+	}
+	
 	getAdvertById(){
 		  let client = new HttpClient();		  
 		  	  
-		  client.fetch('http://localhost:8080/advert/', {
+		  client.fetch('http://localhost:8080/advert/$advertId', {
 			  'method': "GET",
-			  'body': json(this.advertData)
+			  'body': json(this.advertData.id)
 		  })
 		      .then(response => response.json())
 		      .then(data => {

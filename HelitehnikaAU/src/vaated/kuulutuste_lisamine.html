@@ -14,25 +14,25 @@
 <br>
 <br>
 
-
-	<div class="row mb-2">
-	        <div  repeat.for="advert of advertList" class="col-md-4">
-	        <form role = "form" id="advertform" submit.delegate="getAdvertById()">        
-	          <div class="card mb-4 box-shadow">
-	           <img class="card-img-top1" src="src/resources/H8.png" alt="Card image cap">
-	              <strong class="d-inline-block mb-2 text-primary"></strong>
-	              <h3 class="mb-0">
-	                <a class="text-dark">${advert.title}</a>
-	              </h3>            
-	              <br> 
-	              <input type="text" style='display:none' name="id" id="id" value =${advert.id} value.bind="advertData.id">         
-	              <div class="mb-1 text-muted">Hind: ${advert.price}</div>
-	              <p class="mb-1 text-muted">${advert.category}</p>
-	              <a href="#/detail" class="btn btn-light" id="btnShow">Vaata</a>
-	            </div>
-	        </form>
-	      </div>
-	    </div>
+<div class="row mb-2">
+        <div  repeat.for="advert of advertList" class="col-md-4">
+        <form role = "form" id="advertform" submit.delegate="getAdvertById()">        
+          <div class="card mb-4 box-shadow">
+           <img class="card-img-top1" src="src/resources/H8.png" alt="Card image cap">
+              <strong class="d-inline-block mb-2 text-primary"></strong>
+              <h3 class="mb-0">
+                <a class="text-dark">${advert.title}</a>
+              </h3>            
+              <br> 
+              <input type="text" style='display:none' name="advertId" id="advertId" value ="${advert.id}" value.bind="advertData.id">         
+              <div class="mb-1 text-muted">Hind: ${advert.price}</div>
+              <p class="mb-1 text-muted">${advert.category}</p>
+              <!-- <a href="#/detail" class="btn btn-light" id="btnShow">Vaata</a> -->
+              <a click.delegate="detail(advert.id)">Vaata!</a>
+            </div>
+        </form>
+      </div>
+    </div>
 
 </body>
 </template>
