@@ -1,8 +1,8 @@
 export class index 
 {
-  constructor(router)
+  constructor()
   {
-	  this.router = router;
+
   }
  
   
