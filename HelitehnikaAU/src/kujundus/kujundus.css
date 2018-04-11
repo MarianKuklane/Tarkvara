@@ -173,8 +173,8 @@
 /* Pealehe kategooriad   */
 
 .card-img-top{
-	width: 400px;
-	height:400px;
+	width: 350px;
+	height:350px;
 }
 
 .carousel-item{
@@ -263,9 +263,14 @@
 	box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .06); 
 	}
 
-.card-img-top1 {
-	height:300px;
+.card {
+	height:400px;
 	width:400px;
+}
+
+.card-img-top1{
+	height:60%;
+	weight:60%;
 }
 
 .mb-0{
