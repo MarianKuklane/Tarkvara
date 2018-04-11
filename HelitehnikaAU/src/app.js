@@ -1,6 +1,3 @@
-import {PLATFORM} from 'aurelia-pal';
-
-
 export class App
 {
   constructor() 
@@ -18,9 +15,9 @@ export class App
     	   { route: 'regaette', name: 'ettevõtte_registreerimine', moduleId: 'vaated/ettevõtte_registreerimine', nav: true, title: 'Registeeru'},
     	   { route: 'regakas', name: 'kasutajaks_registreerimine', moduleId: 'vaated/kasutajaks_registreerimine', nav: true},
            { route: 'lisa', name: 'lisauus', moduleId: 'vaated/lisauus', nav: true, title: 'Lisa'},
-           { route: 'kuulutustelis/:category', name: 'kuulutuste_lisamine', moduleId: 'vaated/kuulutuste_lisamine', title: 'Kuulutuse_lisamine'},
+           { route: 'kuulutustelis', name: 'kuulutuste_lisamine', moduleId: 'vaated/kuulutuste_lisamine', title: 'Kuulutuse_lisamine', nav: true},
            { route: 'logisisse', name: 'logi_sisse', moduleId: 'vaated/logisisse', title: 'Logi_sisse', nav: true},
-           { route: 'detail/:id', name: 'detail_vaade', moduleId: PLATFORM.moduleName('vaated/detail_vaade'), title: 'detail_vaade'},
+           { route: 'detail', name: 'detail_vaade', moduleId: 'vaated/detail_vaade', title: 'detail_vaade', nav: true},
         ]);
   } 
   
