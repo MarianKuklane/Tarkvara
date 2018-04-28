@@ -54,14 +54,14 @@
           </div>
         </div>
         
-        <form id="Puldid">
+        <form id="Puldid" submit.delegate="">
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
             <a href="#/kuulutustelis"><img class="card-img-top" src="src/resources/midas1.jpg" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <a href="#/kuulutustelis">Puldid</a>
-                <input type="hidden" value="Puldid" value.bind="searchStr"/>
+              	<button click.delegate="advertsView('puldid')">Puldid</button>
               </h4>
               <p class="card-text">Digitaalsed ning analoogsed helipuldid ja salvestusseadmed.</p>
             </div>

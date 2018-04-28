@@ -1,13 +1,16 @@
 import {HttpClient, json} from 'aurelia-fetch-client'
+import {inject} from 'aurelia-framework';
+import {Router} from 'aurelia-router';
 
 export class kasutajaks_registreerimine 
 {
    userData={}
 	
-  constructor()
-  {
-
-  }
+	static inject() { return [Router]; }
+	
+	constructor(router) {
+		this.router = router;
+	}
   
   addUser(){
 	  let client = new HttpClient();	
