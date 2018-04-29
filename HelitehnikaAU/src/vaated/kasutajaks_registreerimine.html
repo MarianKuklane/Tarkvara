@@ -30,11 +30,11 @@
 					<legend>Isikuandmed:</legend>
 					<div class="column1">
 						<label for="fistName">*&nbsp;Eesnimi:</label>
-					    <input class="form-control" rows="1" id="firstname" name="name" value.bind="userData.firstname" pattern="^[A-z\d\.]{4,}$" oninvalid="setCustomValidity('Sisesta eesnimi!')"></input>
+					    <input class="form-control" rows="1" id="firstname" name="name" value.bind="userData.firstname" pattern="^[A-z\d\.]{4,}$" oninvalid="setCustomValidity('Sisesta eesnimi!')" oninput="setCustomValidity('')"></input>
 					    <label for="lastName">*&nbsp;Perekonnanimi:</label>
-					    <input class="form-control" rows="1" id="lastname" name="lastname" value.bind="userData.lastname" pattern="^[A-z\d\.]{4,}$" oninvalid="setCustomValidity('Sisesta perenimi!')"></input>
+					    <input class="form-control" rows="1" id="lastname" name="lastname" value.bind="userData.lastname" pattern="^[A-z\d\.]{4,}$" oninvalid="setCustomValidity('Sisesta perenimi!')" oninput="setCustomValidity('')"></input>
 					    <label for="phone">Telefon:</label>
-					    <input class="form-control" rows="1" id="phone" name="phone" value.bind="userData.phone" pattern="^(?:5)[1-9]{.8}" oninvalid="setCustomValidity('Sisesta mobiili number')"></input>
+					    <input class="form-control" rows="1" id="phone" name="phone" value.bind="userData.phone" pattern="^(?\+372\)[5-9]" oninvalid="setCustomValidity('Sisesta mobiili number')" oninput="setCustomValidity('')"></input>
 					</div>
 				
 				
@@ -42,17 +42,17 @@
 					<legend>Kasutajakonto info:</legend>
 					<div class="column2">
 						<label for="userName">*&nbsp;Sisesta kasutajanimi:</label>
-					    <input class="form-control" rows="1" id="username" name="username" value.bind="userData.username" pattern="[a-z]{1,15}" oninvalid="setCustomValidity('Sisesta kasutajanimi mis koosneb väikestest tähtedest ja numbridest!')"></input>
+					    <input class="form-control" rows="1" id="username" name="username" value.bind="userData.username" pattern="[a-z]{1,15}" oninvalid="setCustomValidity('Sisesta kasutajanimi mis koosneb väikestest tähtedest ja numbridest!')" oninput="setCustomValidity('')"></input>
 					    <label for="email">*&nbsp;Meiliaadress:</label>
-					    <input class="form-control" rows="1" id="email" name="email" value.bind="userData.email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" oninvalid="setCustomValidity('Sisesta email!')"></input>
+					    <input class="form-control" rows="1" id="email" name="email" value.bind="userData.email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" oninvalid="setCustomValidity('Sisesta email!')" oninput="setCustomValidity('')"></input>
 					    <label for="password">*&nbsp;Parool:</label>
-					    <input type="password" class="form-control" rows="1" id="password"  name="password" value.bind="userData.password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"  oninvalid="setCustomValidity('Parool peab sisaldama numbreid, suur ja väike tähti!')"></input>
+					    <input type="password" class="form-control" rows="1" id="password"  name="password" value.bind="userData.password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"  oninvalid="setCustomValidity('Parool peab sisaldama numbreid, suur ja väike tähti!')" oninput="setCustomValidity('')"></input>
 					    
 					</div>
 					
 					<fieldset>
 						<div class="button-horizontal">
-					 		<button type="submit" class="btn btn-light btn-lg btn-block" id="save" name="register">Registeeri</button>
+					 		<button  type="submit" class="btn btn-light btn-lg btn-block" id="save" name="register">Registeeri</button>
 					 	</div>
 					</fieldset>
 				

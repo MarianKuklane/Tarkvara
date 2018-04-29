@@ -26,14 +26,14 @@
 			<div class="form-group row">
 				 <label for="title" class="col-sm-2 col-form-label">Kuulutuse pealkiri:</label>
 				    <div class="col-sm-6">
-				      <input type="text" name="title" class="form-control" id="title" value.bind="advertData.title"  pattern="^[A-za-z0-9_]{1,150}$" oninvalid="setCustomValidity('Sisesta korrektne pealkiri')">
+				      <input type="text" name="title" class="form-control" id="title" value.bind="advertData.title"  pattern="^[A-Za-z0-9_ ]{1,15}$" oninvalid="setCustomValidity('Sisesta korrektne pealkiri')" oninput="setCustomValidity('')">
 				    </div>
 			 </div>
 			
 			 <div class="form-group row">
 				    <label for="description" class="col-sm-2 col-form-label">Kuulutuse tekst:</label>
 						<div class="col-sm-6">
-				      		<input type="text" name="description" class="form-control" rows="3" id="description" value.bind="advertData.description"   pattern=".{3,}" oninvalid="setCustomValidity('Sisesta kuulutuse kohta käiv info!')"></input>
+				      		<input type="text" name="description" class="form-control" rows="3" id="description" value.bind="advertData.description"   pattern=".{3,}" oninvalid="setCustomValidity('Sisesta kuulutuse kohta käiv info!')" oninput="setCustomValidity('')"></input>
 				   		 </div>
 				  </div>
 				   
@@ -41,21 +41,21 @@
 			<div class="form-group row">
 				<label for="price" class="col-sm-2 col-form-label">Hind:</label>
 				   <div class="col-sm-6">
-				     <input type="text" class="form-control" id="price" name="price" value.bind="advertData.price" pattern="\d+(\.\d{2})?" oninvalid="setCustomValidity('Sisesta hind!')">
+				     <input type="text" class="form-control" id="price" name="price" value.bind="advertData.price" pattern="\d+(\.\d{2})?" oninvalid="setCustomValidity('Sisesta hind!')" oninput="setCustomValidity('')">
 				   </div>
 			 </div>
 			
 			  <div class="form-group row">
 			    <label for="email" class="col-sm-2 col-form-label">Email</label>
 				    <div class="col-sm-6">
-				      <input type="text" class="form-control" name="email" id="email" value.bind="advertData.email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" oninvalid="setCustomValidity('Sisesta email!')">
+				      <input type="text" class="form-control" name="email" id="email" value.bind="advertData.email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" oninvalid="setCustomValidity('Sisesta email!')" oninput="setCustomValidity('')">
 				    </div>
 			  </div>
 			  
 			   <div class="form-group row">
 			    <label for="phone" class="col-sm-2 col-form-label">Telefon</label>
 				    <div class="col-sm-6">
-				      <input type="text" class="form-control" name="phone" id="phone" value.bind="advertData.phone" pattern="^[0-9-+s()]*$" oninvalid="setCustomValidity('Sisesta korrektne telefoni number!')">
+				      <input type="text" class="form-control" name="phone" id="phone" value.bind="advertData.phone" pattern="^[0-9-+s()]*$" oninvalid="setCustomValidity('Sisesta korrektne telefoni number!')" oninput="setCustomValidity('')">
 				    </div>
 			  </div>
 			  
@@ -88,7 +88,7 @@
 				  
 		</div>
 			 <div class="button-horizontal2">
-				<button type="submit" class="btn btn-light btn-lg btn-block" id="save" name="save" value="Lisa kuulutus">Lisa kuulutus</button> 	
+				<button type="submit" class="btn btn-light btn-lg btn-block" id="save" name="save"  value="Lisa kuulutus">Lisa kuulutus</button> 	
 			</div>
 			<br>
 			<br>

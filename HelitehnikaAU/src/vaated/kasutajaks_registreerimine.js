@@ -36,6 +36,9 @@ export class kasutajaks_registreerimine
 		  	alert("Sisesta väljad!");
 		  }
 	  
-
+	  if (firstname.value  || lastname.value  ||  username.value   ||  email.value || password.value)
+	  {
+		  document.location.href = "index"
+	  }
   }
 }

@@ -40,8 +40,8 @@ export class lisauus
 
 	if(title.value || email.value || phone.value || price.value || description.value )
 		{
-			alert("Kuulutus lisatud!")
-		}
+			document.location.href = "index"
+		} 
 	
 	
   }
