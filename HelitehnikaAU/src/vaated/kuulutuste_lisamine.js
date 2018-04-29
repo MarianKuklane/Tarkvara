@@ -24,7 +24,9 @@ export class kuulutuse_lisamine
 
 		client.fetch('http://localhost:8080/adverts/' + params.subcategory)
 			.then(response => response.json())
-			.then(adverts => this.advertList = adverts);		
+			.then(adverts => this.advertList = adverts);	
+		
+		console.log(this.advertList);
 		
 	}
 	
