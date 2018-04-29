@@ -35,5 +35,7 @@ export class kasutajaks_registreerimine
 		  {
 		  	alert("Sisesta väljad!");
 		  }
+	  
+
   }
 }

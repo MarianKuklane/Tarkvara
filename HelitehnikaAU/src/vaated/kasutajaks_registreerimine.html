@@ -30,11 +30,11 @@
 					<legend>Isikuandmed:</legend>
 					<div class="column1">
 						<label for="fistName">*&nbsp;Eesnimi:</label>
-					    <input class="form-control" rows="1" id="firstname" name="name" value.bind="userData.firstname" pattern="^[a-z\d\.]{4,}$" title="Sisesta eesnimi!"></input>
+					    <input class="form-control" rows="1" id="firstname" name="name" value.bind="userData.firstname" pattern="^[A-z\d\.]{4,}$" oninvalid="setCustomValidity('Sisesta eesnimi!')"></input>
 					    <label for="lastName">*&nbsp;Perekonnanimi:</label>
-					    <input class="form-control" rows="1" id="lastname" name="lastname" value.bind="userData.lastname" pattern="^[a-z\d\.]{4,}$" title="Sisesta perenimi!"></input>
+					    <input class="form-control" rows="1" id="lastname" name="lastname" value.bind="userData.lastname" pattern="^[A-z\d\.]{4,}$" oninvalid="setCustomValidity('Sisesta perenimi!')"></input>
 					    <label for="phone">Telefon:</label>
-					    <input class="form-control" rows="1" id="phone" name="phone" value.bind="userData.phone" pattern="^(?:5)[1-9]{.8}" title=""></input>
+					    <input class="form-control" rows="1" id="phone" name="phone" value.bind="userData.phone" pattern="^(?:5)[1-9]{.8}" oninvalid="setCustomValidity('Sisesta mobiili number')"></input>
 					</div>
 				
 				
@@ -42,11 +42,11 @@
 					<legend>Kasutajakonto info:</legend>
 					<div class="column2">
 						<label for="userName">*&nbsp;Sisesta kasutajanimi:</label>
-					    <input class="form-control" rows="1" id="username" name="username" value.bind="userData.username" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" value="Sisesta korrektne kasutajanimi"></input>
+					    <input class="form-control" rows="1" id="username" name="username" value.bind="userData.username" pattern="[a-z]{1,15}" oninvalid="setCustomValidity('Sisesta kasutajanimi mis koosneb väikestest tähtedest ja numbridest!')"></input>
 					    <label for="email">*&nbsp;Meiliaadress:</label>
-					    <input class="form-control" rows="1" id="email" name="email" value.bind="userData.email" pattern="/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/" title="Sisesta email!"></input>
+					    <input class="form-control" rows="1" id="email" name="email" value.bind="userData.email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" oninvalid="setCustomValidity('Sisesta email!')"></input>
 					    <label for="password">*&nbsp;Parool:</label>
-					    <input type="password" class="form-control" rows="1" id="password"  name="password" value.bind="userData.password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title=" Parool peab sisaldama numbreid, suur ja väike tähti!"></input>
+					    <input type="password" class="form-control" rows="1" id="password"  name="password" value.bind="userData.password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"  oninvalid="setCustomValidity('Parool peab sisaldama numbreid, suur ja väike tähti!')"></input>
 					    
 					</div>
 					

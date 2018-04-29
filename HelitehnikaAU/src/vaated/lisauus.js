@@ -32,11 +32,17 @@ export class lisauus
 	  var phone = document.getElementById("phone");
 	  var price = document.getElementById("price");
 	  var description = document.getElementById("description");
+	  
 	  if (title.value == ""  || email.value == ""  ||  phone == ""  ||  price ==""  ||  description =="")
 		  {
 		  	alert("Sisesta väljad!");
 		  }
 
+	if(title.value || email.value || phone.value || price.value || description.value )
+		{
+			alert("Kuulutus lisatud!")
+		}
+	
 	
   }
 }
