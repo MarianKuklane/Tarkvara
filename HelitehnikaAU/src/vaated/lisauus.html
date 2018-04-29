@@ -26,14 +26,14 @@
 			<div class="form-group row">
 				 <label for="title" class="col-sm-2 col-form-label">Kuulutuse pealkiri:</label>
 				    <div class="col-sm-6">
-				      <input type="text" name="title" class="form-control" id="title" value.bind="advertData.title">
+				      <input type="text" name="title" class="form-control" id="title" value.bind="advertData.title"  pattern="^[A-Za-z0-9_]{1,15}$" title="Sisesta korrektne pealkiri">
 				    </div>
 			 </div>
 			
 			 <div class="form-group row">
 				    <label for="description" class="col-sm-2 col-form-label">Kuulutuse tekst:</label>
 						<div class="col-sm-6">
-				      		<textarea type="text" name="description" class="form-control" rows="3" id="description" value.bind="advertData.description"></textarea>
+				      		<textarea type="text" name="description" class="form-control" rows="3" id="description" value.bind="advertData.description" pattern="^[A-Za-z0-9_]{1,150}$" title="Sisesta kuulutuse kohta käiv info!"></textarea>
 				   		 </div>
 				  </div>
 				   
@@ -41,28 +41,28 @@
 			<div class="form-group row">
 				<label for="price" class="col-sm-2 col-form-label">Hind:</label>
 				   <div class="col-sm-6">
-				     <input type="text" class="form-control" id="price" name="price" value.bind="advertData.price">
+				     <input type="text" class="form-control" id="price" name="price" value.bind="advertData.price" pattern="\d+(\.\d{2})?" title="Sisesta hind!">
 				   </div>
 			 </div>
 			
 			  <div class="form-group row">
 			    <label for="email" class="col-sm-2 col-form-label">Email</label>
 				    <div class="col-sm-6">
-				      <input type="text" class="form-control" name="email" id="email" value.bind="advertData.email">
+				      <input type="text" class="form-control" name="email" id="email" value.bind="advertData.email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"" title="Sisesta email!">
 				    </div>
 			  </div>
 			  
 			   <div class="form-group row">
 			    <label for="phone" class="col-sm-2 col-form-label">Telefon</label>
 				    <div class="col-sm-6">
-				      <input type="text" class="form-control" name="phone" id="phone" value.bind="advertData.phone">
+				      <input type="text" class="form-control" name="phone" id="phone" value.bind="advertData.phone" pattern="^[0-9-+s()]*$" title="Sisesta korrektne telefoni number!">
 				    </div>
 			  </div>
 			  
 			  <div class="form-group row">
 				  <label for="subcategory" class="col-sm-2 col-form-label">Kategooria</label>
 				  <div class="col-sm-6">
-					  <select class="custom-select my-1 mr-sm-2" id="category" name="category" value.bind="advertData.category">
+					  <select class="custom-select my-1 mr-sm-2" id="category" name="category" value.bind="advertData.category" >
 					    <option selected>Vali</option>
 					    <option value="Rent">Rent</option>
 					    <option value="Müük">Müük</option>
@@ -74,7 +74,7 @@
 				  <div class="form-group row">
 				  <label for="selection" class="col-sm-2 col-form-label">Seeria</label>
 				  <div class="col-sm-6">
-					  <select class="custom-select my-1 mr-sm-2" id="subcategory" name="subcategory" value.bind="advertData.subcategory">
+					  <select class="custom-select my-1 mr-sm-2" id="subcategory" name="subcategory" value.bind="advertData.subcategory" >
 					    <option selected>Vali</option>
 					    <option value="ConcertSpeakers">Kontsertkõlarid</option>
 					    <option value="RemoteoControls">Puldid</option>
