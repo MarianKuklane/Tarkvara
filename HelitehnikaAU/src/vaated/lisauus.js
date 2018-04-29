@@ -11,7 +11,7 @@ export class lisauus
 	constructor(router) {
 		this.router = router;
 	}
-  
+ 
   addAdvert(){
 	  let client = new HttpClient();		  
 	  	  
@@ -26,5 +26,17 @@ export class lisauus
   
 	  console.log("Method executed");
 	  
+	
+	  var title = document.getElementById("title");
+	  var email = document.getElementById("email");
+	  var phone = document.getElementById("phone");
+	  var price = document.getElementById("price");
+	  var description = document.getElementById("description");
+	  if (title.value == ""  || email.value == ""  ||  phone == ""  ||  price ==""  ||  description =="")
+		  {
+		  	alert("Sisesta väljad!");
+		  }
+
+	
   }
 }

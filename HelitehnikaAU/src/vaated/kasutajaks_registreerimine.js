@@ -12,7 +12,8 @@ export class kasutajaks_registreerimine
 		this.router = router;
 	}
   
-  addUser(){
+  addUser()
+  {
 	  let client = new HttpClient();	
 	  	  
 	  client.fetch('http://localhost:8080/user/add', {
@@ -24,6 +25,15 @@ export class kasutajaks_registreerimine
 	      console.log("Server saatis " + data.firstName);
       });
   
-	
+	  var firstname = document.getElementById("firstname");
+	  var lastname = document.getElementById("lastname");
+	  var phone = document.getElementById("phone");
+	  var username = document.getElementById("username");
+	  var email = document.getElementById("email");
+	  var password = document.getElementById("password");
+	  if (firstname.value == ""  || lastname.value == ""  ||  username.value ==""  ||  email.value =="" || password.value=="")
+		  {
+		  	alert("Sisesta väljad!");
+		  }
   }
-  }
+}

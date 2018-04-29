@@ -30,11 +30,11 @@
 					<legend>Isikuandmed:</legend>
 					<div class="column1">
 						<label for="fistName">*&nbsp;Eesnimi:</label>
-					    <textarea class="form-control" rows="1" id="firstname" name="name" value.bind="userData.firstname" pattern="^[a-z\d\.]{4,}$" title="Sisesta eesnimi!"></textarea>
+					    <input class="form-control" rows="1" id="firstname" name="name" value.bind="userData.firstname" pattern="^[a-z\d\.]{4,}$" title="Sisesta eesnimi!"></input>
 					    <label for="lastName">*&nbsp;Perekonnanimi:</label>
-					    <textarea class="form-control" rows="1" id="lastname" name="lastname" value.bind="userData.lastname" pattern="^[a-z\d\.]{4,}$" title="Sisesta perenimi!"></textarea>
+					    <input class="form-control" rows="1" id="lastname" name="lastname" value.bind="userData.lastname" pattern="^[a-z\d\.]{4,}$" title="Sisesta perenimi!"></input>
 					    <label for="phone">Telefon:</label>
-					    <textarea class="form-control" rows="1" id="phone" name="phone" value.bind="userData.phone" pattern="^(?:5)[1-9]{.8}" title=""></textarea>
+					    <input class="form-control" rows="1" id="phone" name="phone" value.bind="userData.phone" pattern="^(?:5)[1-9]{.8}" title=""></input>
 					</div>
 				
 				
@@ -42,9 +42,9 @@
 					<legend>Kasutajakonto info:</legend>
 					<div class="column2">
 						<label for="userName">*&nbsp;Sisesta kasutajanimi:</label>
-					    <textarea class="form-control" rows="1" id="username" name="username" value.bind="userData.username" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" value="Sisesta korrektne kasutajanimi"></textarea>
+					    <input class="form-control" rows="1" id="username" name="username" value.bind="userData.username" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" value="Sisesta korrektne kasutajanimi"></input>
 					    <label for="email">*&nbsp;Meiliaadress:</label>
-					    <textarea class="form-control" rows="1" id="email" name="email" value.bind="userData.email" pattern="/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/" title="Sisesta email!"></textarea>
+					    <input class="form-control" rows="1" id="email" name="email" value.bind="userData.email" pattern="/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/" title="Sisesta email!"></input>
 					    <label for="password">*&nbsp;Parool:</label>
 					    <input type="password" class="form-control" rows="1" id="password"  name="password" value.bind="userData.password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title=" Parool peab sisaldama numbreid, suur ja väike tähti!"></input>
 					    
