@@ -1,0 +1,29 @@
+<template>
+<head>
+<require from="kujundus/kujundus.css"> </require>
+	
+	<require from="nav-bar.html"></require>
+	<nav-bar></nav-bar>
+	
+	
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+</head>
+
+<body class="text-center">
+    <form class="form-signin">
+      <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+      <h1 class="h3 mb-3 font-weight-normal">Logi sisse </h1>
+      <label for="inputUsername" class="sr-only">Kasutajanimi</label>
+      <input type="username" id="inputUsername" class="form-control" placeholder="Kasutajanimi" pattern="[a-z]{1,15}" oninvalid="setCustomValidity('Sisesta kasutajanimi mis koosneb väikestest tähtedest ja numbridest!')" oninput="setCustomValidity('')" >
+      <label for="inputPassword" class="sr-only">Parool</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Parool"   pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"  oninvalid="setCustomValidity('Parool peab sisaldama numbreid, suur ja väike tähti!')" oninput="setCustomValidity('')" >
+      <button class="btn btn-light btn-lg btn-block" type="submit">Sisene</button>
+    </form>
+ </body>
+
+
+</template>

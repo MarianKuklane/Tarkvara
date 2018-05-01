@@ -15,6 +15,7 @@
 	            <a  href="#/regakas">Registreeru</a>
 	            <a  href="#/lisa">Lisa uus</a> 
 	            <a  href="#" onclick="document.getElementById('id01').style.display='block'">Logi sisse</a>
+	     <!---  <a  href="#/logisisseUUS">Logi sisse UUS</a> - -->  
 	      </div>
    </nav>
 
@@ -27,12 +28,12 @@
 	
 	    <div class="container">
 		    <div class="form-group">
-			    <label for="username">Kasutajanimi</label>
-			    <input type="username" class="form-control" id="username" placeholder="Kasutajanimi">
+			    <label for="Username">Kasutajanimi</label>
+			    <input type="username" class="form-control" id="username" placeholder="Kasutajanimi"  pattern="[a-z]{1,15}" oninvalid="setCustomValidity('Sisesta kasutajanimi mis koosneb väikestest tähtedest ja numbridest!')" oninput="setCustomValidity('')">
 			  </div>
 			  <div class="form-group">
 			    <label for="Password">Parool</label>
-			    <input type="password" class="form-control" id="password" placeholder="Parool">
+			    <input type="password" class="form-control" id="password" placeholder="Parool" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"  oninvalid="setCustomValidity('Parool peab sisaldama numbreid, suur ja väike tähti!')" oninput="setCustomValidity('')">
 			  </div>
 		      <button class="btn btn-light btn-lg btn-block" type="submit">Logi sisse</button>
 		      <br>
