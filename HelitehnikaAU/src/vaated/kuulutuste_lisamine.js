@@ -31,7 +31,7 @@ export class kuulutuse_lisamine
 	}	
 	
 	advertView(id){
-	      window.alert(id);
+	      //window.alert(id);
 	      this.router.navigate(`detail` +'/'+ id);
 	  }
 	
