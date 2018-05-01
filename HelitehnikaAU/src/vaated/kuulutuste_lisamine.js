@@ -28,29 +28,14 @@ export class kuulutuse_lisamine
 		
 		console.log(this.advertList);
 		
-	}
+	}	
 	
-	searchUser() {
-		let client = new HttpClient();
-
-		client.fetch('http://localhost:8080/adverts/search/' + this.searchStr)
-			.then(response => response.json())
-			.then(users => this.advertList = adverts);
-	}
-	
-	getAdvertById(){
-		  let client = new HttpClient();		  
-		  	  
-		  client.fetch('http://localhost:8080/advert/', {
-			  'method': "GET",
-			  'body': json(this.advertData)
-		  })
-		      .then(response => response.json())
-		      .then(data => {
-		      console.log("Server saatis ");
-	      });
-	  
-		  console.log("Method getAdvertById executed");
-		  
+	advertView(id){
+	      window.alert(id);
+	      this.router.navigate(`detail` +'/'+ id);
 	  }
+	
+	
+	
+	  
 }
