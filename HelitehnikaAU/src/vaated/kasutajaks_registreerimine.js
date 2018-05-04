@@ -31,14 +31,18 @@ export class kasutajaks_registreerimine
 	  var username = document.getElementById("username");
 	  var email = document.getElementById("email");
 	  var password = document.getElementById("password");
-	  if (firstname.value == ""  || lastname.value == ""  ||  username.value ==""  ||  email.value =="" || password.value=="")
+	  if (firstname.value == ""  &&  lastname.value == ""  &&  username.value ==""  &&  email.value =="" && password.value=="")
 		  {
 		  	alert("Sisesta väljad!");
 		  }
 	  
-	  if (firstname.value  || lastname.value  ||  username.value   ||  email.value || password.value)
+	  if (firstname.value && lastname.value  &&  username.value   &&  email.value && password.value)
 	  {
 		  document.location.href = "index"
 	  }
+	 /* else 
+		{
+			alert("Sisesta kõik väljad!");
+		}*/
   }
 }

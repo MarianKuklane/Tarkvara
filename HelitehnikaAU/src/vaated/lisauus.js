@@ -33,15 +33,19 @@ export class lisauus
 	  var price = document.getElementById("price");
 	  var description = document.getElementById("description");
 	  
-	  if (title.value == ""  || email.value == ""  ||  phone == ""  ||  price ==""  ||  description =="")
+	  if (title.value == ""  && email.value == ""  &&  phone == ""  &&  price ==""  &&  description =="")
 		  {
 		  	alert("Sisesta väljad!");
 		  }
 
-	if(title.value || email.value || phone.value || price.value || description.value )
+	if(title.value && email.value && phone.value && price.value && description.value)
 		{
 			document.location.href = "index"
 		} 
+	else 
+	{
+		alert("Sisesta kõik väljad!");
+	}
 	
 	
   }
