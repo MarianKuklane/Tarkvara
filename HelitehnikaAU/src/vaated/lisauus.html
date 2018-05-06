@@ -26,14 +26,14 @@
 			<div class="form-group row">
 				 <label for="title" class="col-sm-2 col-form-label">Kuulutuse pealkiri:</label>
 				    <div class="col-sm-6">
-				      <input type="text" name="title" class="form-control" id="title" value.bind="advertData.title"  pattern="^[A-Za-z0-9_ ]{3,20}$" oninvalid="setCustomValidity('Sisesta korrektne pealkiri, pealkiri peab olema 3 kuni 15 tähemärki')" oninput="setCustomValidity('')">
+				      <input type="text" name="title" class="form-control" id="title" value.bind="advertData.title"  pattern="^[A-Za-z0-9_ ]{3,15}$" oninvalid="setCustomValidity('Sisesta korrektne pealkiri, pealkiri peab olema 3 kuni 15 tähemärki')" oninput="setCustomValidity('')">
 				    </div>
 			 </div>
 			
 			 <div class="form-group row">
 				    <label for="description" class="col-sm-2 col-form-label">Kuulutuse tekst:</label>
 						<div class="col-sm-6">
-				      		<input type="text" name="description" class="form-control" rows="3" id="description" value.bind="advertData.description"   pattern="^[A-Za-z0-9_ ]{3,512}$" oninvalid="setCustomValidity('Sisesta kuulutuse kohta käiv info, tekst peab olema 3 kuni 512 märki')" oninput="setCustomValidity('')"></input>
+				      		<input type="text" name="description" class="form-control" rows="3" id="description" value.bind="advertData.description"   pattern="^[A-Za-z0-9](?=.*[a-z]).{3,}$" oninvalid="setCustomValidity('Sisesta kuulutuse kohta käiv info, tekst peab olema 4 kuni 512 märki')" oninput="setCustomValidity('')"></input>
 				   		 </div>
 				  </div>
 				   

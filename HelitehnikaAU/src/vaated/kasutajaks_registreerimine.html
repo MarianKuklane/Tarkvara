@@ -30,9 +30,9 @@
 					<legend>Isikuandmed:</legend>
 					<div class="column1">
 						<label for="fistName">*&nbsp;Eesnimi:</label>
-					    <input class="form-control" rows="1" id="firstname" name="name" value.bind="userData.firstname" pattern="^[A-z\d\.]{4,}$" oninvalid="setCustomValidity('Sisesta eesnimi!')" oninput="setCustomValidity('')"></input>
+					    <input class="form-control" rows="1" id="firstname" name="name" value.bind="userData.firstname" pattern=" ^[A-z\d\.]{4,}$|[a-zA-Z][a-zA-Z ]{3,}" oninvalid="setCustomValidity('Sisesta eesnimi!')" oninput="setCustomValidity('')"></input>
 					    <label for="lastName">*&nbsp;Perekonnanimi:</label>
-					    <input class="form-control" rows="1" id="lastname" name="lastname" value.bind="userData.lastname" pattern="^[A-z\d\.]{4,}$" oninvalid="setCustomValidity('Sisesta perenimi!')" oninput="setCustomValidity('')"></input>
+					    <input class="form-control" rows="1" id="lastname" name="lastname" value.bind="userData.lastname" pattern="^[A-z]{4,}$|[a-zA-Z][a-zA-Z ]{3,}" oninvalid="setCustomValidity('Sisesta perenimi!')" oninput="setCustomValidity('')"></input>
 					    <label for="phone">Telefon:</label>
 					    <input class="form-control" rows="1" id="phone" name="phone" value.bind="userData.phone" pattern="^[0-9-+s()]*$" minlength="8" maxlength="14" oninvalid="setCustomValidity('Sisesta mobiili number')" oninput="setCustomValidity('')"></input>
 					</div>
@@ -42,7 +42,7 @@
 					<legend>Kasutajakonto info:</legend>
 					<div class="column2">
 						<label for="userName">*&nbsp;Sisesta kasutajanimi:</label>
-					    <input class="form-control" rows="1" id="username" name="username" value.bind="userData.username" pattern="^[A-Za-z0-9_ ]{4,15}$" oninvalid="setCustomValidity('Sisesta kasutajanimi, vähim lubatud nime pikkus on 4 märki!')" oninput="setCustomValidity('')"></input>
+					    <input class="form-control" rows="1" id="username" name="username" value.bind="userData.username" pattern="^[A-Za-z0-9_ ]{4,15}$" oninvalid="setCustomValidity('Sisesta korrektne kasutajanimi, vähim lubatud nime pikkus on 4 märki!')" oninput="setCustomValidity('')"></input>
 					    <label for="email">*&nbsp;Meiliaadress:</label>
 					    <input class="form-control" rows="1" id="email" name="email" value.bind="userData.email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" oninvalid="setCustomValidity('Sisesta email!')" oninput="setCustomValidity('')"></input>
 					    <label for="password">*&nbsp;Parool:</label>
