@@ -21,7 +21,7 @@
 
 	
 	<div id="id01" class="modal">
-	  <form class="modal-content animate" action="/action_page.php"><!--action="/action_page.php"--> 
+	  <form class="modal-content animate" action="/index">  
 	    <div class="imgcontainer">
 	      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
 	    </div>
@@ -29,7 +29,7 @@
 	    <div class="container">
 		    <div class="form-group">
 			    <label for="Username">Kasutajanimi</label>
-			    <input type="username" class="form-control" id="username" placeholder="Kasutajanimi" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"  minlength="4"  maxlength="15" oninvalid="setCustomValidity('Sisesta kasutajanimi, vähim lubatud nime pikkus on 4 märki ja suurim nimepikkus 15 märki!')" oninput="setCustomValidity('')">
+			    <input type="username" class="form-control" id="username" placeholder="Kasutajanimi" pattern="^[A-Za-z0-9_ ]{4,15}$|(?=.*[a-z])|^[A-z\d\.]{4,}$|[a-zA-Z][a-zA-Z ]{3,}" oninvalid="setCustomValidity('Sisesta kasutajanimi, vähim lubatud nime pikkus on 4 märki ja suurim nimepikkus 15 märki!')" oninput="setCustomValidity('')">
 			  </div>
 			  <div class="form-group">
 			    <label for="Password">Parool</label>

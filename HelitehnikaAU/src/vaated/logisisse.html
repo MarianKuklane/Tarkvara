@@ -18,7 +18,7 @@
       <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
       <h1 class="h3 mb-3 font-weight-normal">Logi sisse </h1>
       <label for="inputUsername" class="sr-only">Kasutajanimi</label>
-      <input type="username" id="inputUsername" class="form-control" placeholder="Kasutajanimi" pattern="^[A-Za-z0-9_ ]{4,15}$" oninvalid="setCustomValidity('Sisesta kasutajanimi, vähim lubatud nime pikkus on 4 märki!')" oninput="setCustomValidity('')">
+      <input type="username" id="inputUsername" class="form-control" placeholder="Kasutajanimi" pattern=" ^[A-z\d\.]{4,}$|[a-zA-Z][a-zA-Z ]{3,}" oninvalid="setCustomValidity('Sisesta kasutajanimi, vähim lubatud nime pikkus on 4 märki!')" oninput="setCustomValidity('')">
       <label for="inputPassword" class="sr-only">Parool</label>
       <input type="password" id="inputPassword" class="form-control" placeholder="Parool"   pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"  oninvalid="setCustomValidity('Parool peab sisaldama numbreid, suur ja väike tähti!')" oninput="setCustomValidity('')">
       <button class="btn btn-light btn-lg btn-block" type="submit">Sisene</button>
