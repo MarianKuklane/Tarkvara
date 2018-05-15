@@ -12,8 +12,7 @@ export class index
 	  this.router = router; 
   }
   
-  advertsView(subcategory){
-      //window.alert(subcategory);
+  advertsView(subcategory){      
       this.router.navigate(`kuulutustelis` +'/'+ subcategory);
   }
 

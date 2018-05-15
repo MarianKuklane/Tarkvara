@@ -1,9 +1,16 @@
+import {HttpClient, json} from 'aurelia-fetch-client'
+import {inject} from 'aurelia-framework';
+import {Router} from 'aurelia-router';
+
+
 export class kuulutuse_detailvaade
 {
 	
-  constructor()
-  {
-  }
+static inject() { return [Router]; }	
+	
+	constructor(router) {
+		this.router = router;
+	}
   
   activate()
   {
@@ -28,6 +35,10 @@ export class kuulutuse_detailvaade
 	  {
 		  document.location.href = "index"
 	  }
+  }
+  
+  addNewAdvert(){      
+      this.router.navigate(`lisa`);
   }
   
 }
