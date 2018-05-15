@@ -15,18 +15,14 @@
 	<br>
 	<br>
 	
-		<div class="custom-file">
 	
-		  <input type="file" class="custom-file-input" id="customFile">
-			  <label class="custom-file-label" for="customFile">Vali pilt</label>
-			</div>
 <br>
 			<form role = "form" id="advertform" submit.delegate="addAdvert()">
 			<div class="bounds">
 			<div class="form-group row">
 				 <label for="title" class="col-sm-2 col-form-label">Kuulutuse pealkiri:</label>
 				    <div class="col-sm-6">
-				      <input type="text" name="title" class="form-control" id="title" value.bind="advertData.title"  pattern="^[A-Za-z0-9_ ]{3,15}$" oninvalid="setCustomValidity('Sisesta korrektne pealkiri, pealkiri peab olema 3 kuni 15 tähemärki')" oninput="setCustomValidity('')">
+				      <input type="text" name="title" class="form-control" id="title" value.bind="advertData.title"  pattern="^[A-Za-z0-9](?=.*[a-z]).{3,25}$" oninvalid="setCustomValidity('Sisesta korrektne pealkiri, pealkiri peab olema 3 kuni 25 tähemärki')" oninput="setCustomValidity('')">
 				    </div>
 			 </div>
 			

@@ -97,10 +97,7 @@
 /*
  * Blog name and description
  */
-.card-img-right {
-  height: 100%;
-  border-radius: 0 3px 3px 0;
-}
+
 
 
 @media (min-width: 40em) {
@@ -267,14 +264,11 @@
 	}
 
 .card {
-	height:400px;
+	height:150px;
 	width:400px;
 }
 
-.card-img-top1{
-	height:60%;
-	weight:60%;
-}
+
 
 .mb-0{
 	text-align:center;
@@ -389,11 +383,12 @@
 }
 
 .col2 {
-    float: left;
+   
     width: 50%;
     margin-top: 6px;
     padding: 20px;
     margin-top: 15%;
+    padding-left: 30%; 
 }
 
 
